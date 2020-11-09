@@ -370,6 +370,13 @@ header.header-section.fixed {
     color: #1abc9c;
 }
 
+.header-section .navbar .navbar-brand img {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     text-align: center;
     padding: 0 !important;
@@ -405,14 +412,15 @@ ul.navbar-nav.cart-menu li a .fa-search{
 }
 
 span.shoping-cart {
-    border: 1px solid #0f0101;
+    /* border: 1px solid #0f0101; */
+    border: none;
     padding: 2px 7px 2px 6px;
     text-align: center;
     display: inline-block;
     position: relative;
     background: #fff;
 }
-span.shoping-cart:after{
+/* span.shoping-cart:after{
     height: 90%;
     width: 80%;
     display: block;
@@ -426,7 +434,7 @@ span.shoping-cart:after{
     right: 0;
     margin: 0 auto;
     z-index: -9999;
-}
+} */
 span.shoping-cart:hover:after{
     top: -50%;
 }
@@ -444,7 +452,7 @@ span.shoping-cart:before{
     margin: 0 auto;
     z-index: -999;
 }
-span.shoping-cart {
+/* span.shoping-cart {
     border: 1px solid #0f0101;
     padding: 2px 7px 2px 6px;
     text-align: center;
@@ -453,7 +461,7 @@ span.shoping-cart {
     background: #fff;
     z-index: 9999999;
     color: #1abc9c;
-}
+} */
 /*
     SEAARCH SECTION
  */
@@ -1008,12 +1016,14 @@ a.carousel-control.right > span{
     text-align: center;
     padding: 100px 0 80px;
 }
-.titie-section{}
+.titie-section{
+    
+}
 .news-letter-section p{
-    color: #fff;
-    font-size: 14px;
+    color: rgb(29, 55, 201);
+    font-size: 20px;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 800;
     margin-top: 25px;
     display: block;
     overflow: hidden;
@@ -1026,7 +1036,7 @@ a.carousel-control.right > span{
 .form-inline{
     /*width: 100%;   */
     display: block;
-    background: #fff;
+    background: #1abc9c;
     position: relative;
     padding: 0;
     border-radius: 10px;
@@ -1413,6 +1423,14 @@ footer.footer p a{
     RESPONSIVE STYLE
  */
 @media (max-width: 1200px){
+
+    .header-section .navbar .navbar-brand img {
+
+        width: 10%;
+        height: auto;
+        top: -18px;
+    }
+
      .product-hover a {
         padding: 2%;
     }
@@ -1438,6 +1456,8 @@ footer.footer p a{
         margin: 5px 25%;
         padding: 10px;
     }
+
+    
 }
 
 @media (max-width: 992px){
@@ -1465,6 +1485,14 @@ footer.footer p a{
     }
 }
 @media (max-width: 767px){
+
+    .header-section .navbar .navbar-brand img {
+        width: 20%;
+        height: auto;
+        top: -8px;
+    }
+
+
     ul.navbar-nav {
         width: 100%;
         display: block;
